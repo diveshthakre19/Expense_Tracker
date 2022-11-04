@@ -12,7 +12,7 @@
     <div class="container">
       <div class="tracker">
         <div class="tracker-head">
-          <div>
+          <div class="grid">
             <label for="text">Name</label>
             <input type="text" name="name" id="name" />
             <label for="date">Date</label>
@@ -27,10 +27,25 @@
             <label for="amount">Amount</label>
             <input type="number" name="number" id="amount" />
           </div>
-          <button >
+          <button onclick="addExpense()" id="addBtn">
               Add Expense
             </button>
         </div>
+         <table>
+        <tbody>
+          <tr>
+            <td>sr.no</td>
+            <td>Name</td>
+            <td>Date</td>
+            <td>Type</td>
+            <td>Amount</td>
+            <td>Option</td>
+          </tr>
+         
+
+        </tbody>
+         </table>
+        
       </div>
     </div>
     <script src="./js/script.js"></script>

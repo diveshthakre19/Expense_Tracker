@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(180deg, #FED54A, #FF9347);
+    font-family: Verdana, Geneva, Tahoma;
+}
+h1{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.tracker-head{
+     display: flex;
+     flex-direction: column;
+     width: 40vw;
+     justify-content: center;
+     align-items: center;
+     font-size: 1.5rem;
+     background: tomato;
+     border-radius: 1rem;
+     margin: 0 auto;
+     padding: 2rem 10rem;
+
+
+}
+input , select {
+    margin: .5rem 0;
+    font-size: 1.5rem;
+    width: 15rem;
+}
+label{
+    font-weight: 200;
+}
+
+button {
+	background-color: #3DBE29;
+	border: 2px solid #3DBE29;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+    font-weight: 600;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}

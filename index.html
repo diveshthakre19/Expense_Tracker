@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ExpenseTracker</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <h1>Expense Tracker</h1>
-    <div class="container">
-      <div class="tracker">
-        <div class="tracker-head">
-          <div class="grid">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExpenseTracker</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <h1>Expense Tracker</h1>
+  <div class="container">
+    <div class="tracker">
+      <div class="tracker-head">
+        <div>
+          <form class=" form grid">
             <label for="text">Name</label>
             <input type="text" name="name" id="name" />
             <label for="date">Date</label>
             <input type="date" name="date" id="date" />
-
             <label for="type">Type</label>
             <select name="type" id="type">
+              <option value="chooseOne">Choose one...</option>
               <option value="cash">Cash</option>
               <option value="Card">Card</option>
               <option value="UPI">UPI</option>
             </select>
             <label for="amount">Amount</label>
             <input type="number" name="number" id="amount" />
-          </div>
-          <button onclick="addExpense()" id="addBtn">
-              Add Expense
-            </button>
         </div>
-         <table>
+        <button id="addBtn">
+          Add Expense
+        </button>
+      </div>
+      </form>
+      <table>
         <tbody>
           <tr>
             <td>sr.no</td>
@@ -41,13 +45,12 @@
             <td>Amount</td>
             <td>Option</td>
           </tr>
-         
-
         </tbody>
-         </table>
-        
-      </div>
+      </table>
+
     </div>
-    <script src="./js/script.js"></script>
-  </body>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

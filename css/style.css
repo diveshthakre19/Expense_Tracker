@@ -63,3 +63,12 @@ color: #FFF;
 font-size: 1.5rem;
 padding: 1rem;
 }
+
+.delete{
+    background-color: #D82E2F;
+    cursor: pointer;
+}
+
+thead td{
+    background-color: #120E43;
+}
